@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oblig1data1700</title>
+
 </head>
+<style>
+  label { display: table-cell; }
+  input { display: table-cell; }
+</style>
 <body>
-$END$
+<h1>Bestilling av kino biletter</h1>
+<!-- Skjema for å legge til billetter -->
+<form id = "billettForm">
+  <label for="filmer">Film:</label>
+  <select id="filmer" class="form-select" aria-label="Default select example">
+    <option value="blank"></option>
+    <option value="Rush Hour1">Rush Hour 1 </option>
+    <option value="Rush Hour2">Rush Hour 2</option>
+    <option value="Rush Hour3">Rush Hour 3</option>
+    <option value="Rush Hour4">Rush Hour 4</option>
+  </select>
+</form>
+<!-- <input type="text" id="filmer" required><br> -->
+
+<label for="antall">Antall billetter:</label>
+<input type="text" id="antall" required><br>
+
+<label for="fornavn">Fornavn:</label>
+<input type="text" id="fornavn"><br>
+
+<label for="etternavn">Etternavn:</label>
+<input type="text" id="etternavn"><br>
+
+<label for="telefon">Telefon:</label>
+<input type="tel" id="telefon"><br>
+
+<label for="epost">Email:</label>
+<input type="epost" id="epost"><br>
+
+
+
+<button type="button" id="kjopBillett">Kjøp Billett</button>
+</form>
+
+<!-- Liste for alle billetter -->
+<h2>Alle Billetter</h2>
+<ul id="billettListe"></ul>
+
+<!-- En knapp for å slette alle billettene -->
+<button type="button" id="slettBilletter">Slett alle billetter</button>
+
+
+<script src="script.js"></script>
 </body>
 </html>
